@@ -215,6 +215,106 @@ margin-right: 25px;
         width: 90px;
     }
 }
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .sidebar {
+        width: 20%;
+        padding-left: 1%;
+    }
+    .nav-middle .search-box input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 4%;
+    }
+    .nav-middle {
+        width: 100%;
+        margin: 10px 0;
+        justify-content: flex-start;
+    }
+    .nav-middle .search-box input {
+        width: 100px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .list-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-left {
+        order: 1;
+        display: flex;
+        align-items: center;
+    }
+    .nav-middle {
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .nav-middle .search-box {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .nav-right {
+        order: 3;
+        display: flex;
+        align-items: center;
+    }
+    .nav-left .logo {
+        display: block;
+        margin-left: 10px;
+        order: 2;
+    }
+    .nav-left .menu-icon {
+        display: block;
+        margin-right: 10px;
+        order: 1;
+    }
+    .nav-right .user-icon {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-left .logo {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .nav-left {
+        width: auto;
+    }
+    .nav-right {
+        width: auto;
+    }
+}
 /* -----------------play video page------------- */
 .play-container{
 padding-left: 2%;    
